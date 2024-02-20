@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="node_modules/@mrvinrsk/upgrade-scss/assets/style/CSS/Upgrade.css">
+    <meta charset="UTF-8">
+    <title>zinsen-rechner</title>
+
+    <script>
+        function rechnen(){
+         //   erg=formular1.wert1.value/formular1.wert2.value;
+           // formular1.erg.value=erg;
+     
+
+let a = document.getElementById("aa").value;
+let b = document.getElementById("bb").value;
+let c = document.getElementById("cc").value;
+
+
+if (a == "") {
+    document.getElementById("aa").value = c * b;
+}
+
+if (b == "") {
+    document.getElementById("bb").value = a / c;
+}
+
+if (c == "") {
+    document.getElementById("cc").value = a / b;
+}
+
+       }
+
+
+    </script>
+
+</head>
+<body>
+
+
+
+    <input type="text" id="aa" ><br>
+    <input type="text" id="bb" ><br>
+    <input type="text" id="cc" ><br>
+    <input type="button" onclick="rechnen()" value="rechnen">
+
+</body>
+</html>
